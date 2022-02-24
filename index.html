@@ -116,19 +116,21 @@
           <div class="inner">
             <div class="slide slide_1">
               <div class="slidecontent">
-                <a href="https://www.figma.com/file/TVc3HimFNTlPNbh9oAw2Ui/TPM-Project">
+                <a href="https://www.figma.com/file/TVc3HimFNTlPNbh9oAw2Ui/TPM-Project"><img src="assets/projek1.png"></a>
               </div>
             </div>
 
             <div class="slide slide_2">
+              <a href="https://www.figma.com/file/TVc3HimFNTlPNbh9oAw2Ui/TPM-Project"><img src="assets/projek2.png"></a>
               <div class="slidecontent">
-                <a href="https://www.figma.com/file/TVc3HimFNTlPNbh9oAw2Ui/TPM-Project">
+               
               </div>
             </div>
 
             <div class="slide slide_3">
+              <a href="https://www.figma.com/file/OH7JTWdfIohjBBw32ncrnl/Microblogging-IG?node-id=0%3A1"><img src="assets/projek3.png"></a>
               <div class="slidecontent">
-                <a href="https://www.figma.com/file/OH7JTWdfIohjBBw32ncrnl/Microblogging-IG?node-id=0%3A1">
+                
               </div>
             </div>
 
@@ -149,6 +151,61 @@
       </div>
     </div>
     </section>
+
+    <!--Contact-->
+
+    <section id="contact">
+      <h1 class="judul">Contact Me</h1>
+      <form action="submit">
+          <label class="labels nama" for="nama">Nama</label>
+          <input class="input" type="text" id="Nama"/>
+
+          <label class="labels email" for="email">Email</label>
+          <input class="input" type="email" id="email" />
+
+          <label class="labels linkedin" for="linkedin">LinkedIn</label>
+          <input class="input" type="text" id="text" />
+  
+          <label class="labels com" for="comment">Comment</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+      </br>
+          <button type="submit">Send</button>
+  
+      </form>
+      
+    </section>
+
+    <footer>
+        <div class="wrapper">
+          &copy; 2021. <b>by Celina Josephine. </b>All Rights Reserved. 
+        </div>
+    </footer>
+
+    <script>
+      let bird1 = document.getElementById("bird1");
+      let bird2 = document.getElementById("bird2");
+      let btn = document.getElementById('btn');
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        bird1.style.top = value * -1.5 + "px";
+        bird1.style.left = value * 2 + "px";
+        bird2.style.top = value * -1.5 + "px";
+        bird2.style.left = value * 2 + "px";
+        btn.style.marginTop= value*3+ 'px';
+  
+      });
+
+      function togglemenu(){
+        const menu = document.querySelector('.menu');
+        const navbar = document.querySelector('.navbar');
+        menu.classList.toggle("show");
+        navbar.classList.toggle('active');
+      }
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   </body>
 </html>
